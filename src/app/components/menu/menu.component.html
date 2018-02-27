@@ -1,0 +1,26 @@
+<div class="row fullHeight">
+  <div class="col-lg-2 col-md-3 card-right-box-shadow leftMenu">
+    <app-drawer></app-drawer>
+  </div>
+  <div class="col-lg-10 col-md-9 padding0">
+    <div class="col-md-12 card-light-box-shadow zindex1">
+      <app-header></app-header>
+    </div>
+    <div class="col-md-12 titleDiv blackColor card-light-box-shadow">
+      Manu: <strong>Configure Your Own Manu</strong>
+    </div>
+    <div class="col-md-12 blackColor card-box-shadow menuManipulateDiv style-4">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 menuItemHeader">
+            <b>Menu Item Sections</b> <button class="btn btn-default float-right pointer saveButton" type="button"  (click)="saveMenu()">Save Menu</button>
+        </div>
+        <div class="addMenuItem col-sm-12 col-md-12" *ngFor="let menuSection of menuSectionsArray;let i = index">
+          <app-menusection [headerTitle]="menuSection.name" [menuSectionArray]="menuSection.items" (sendMenuData)="sendMenuData($event)" ></app-menusection>
+        </div>
+        <div class="col-md-5 col-sm-6 offset-md-4 offset-md-4 menuItemAddSection text-center pointer" (keyup.enter)="addSection(newSection)" >
+          <span>+</span> Add Another Section  : <input name="newSection" [(ngModel)]="newSection" type="text" >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

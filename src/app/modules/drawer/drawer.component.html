@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="logoDiv offset-md-1 offset-lg-1 col-md-10 col-lg-10"></div>
+
+  <ul class="col-md-12 col-lg-12 MenuList padding-right0">
+    <li class="pointer" [class.active] = "selectedItem == 'dashboard'" (click)="changeRoute('dashboard')">Dashboard</li>
+    <li class="pointer" [class.active] = "selectedItem == 'order'" (click)="changeRoute('order')">Order Panel</li>
+    <li class="pointer" [class.active] = "selectedItem == 'analysis'" (click)="changeRoute('analysis')">Analysis</li>
+    <li class="pointer" [class.active] = "selectedItem == 'predictions'" (click)="changeRoute('predictions')">Predictions</li>
+    <li class="pointer" [class.active] = "selectedItem == 'reviews'" (click)="changeRoute('reviews')">Review Analysis</li>
+    <li class="pointer" [class.active] = "selectedItem == 'today'" (click)="changeRoute('today')">Todays Orders</li>
+    <li class="pointer" [class.active] = "selectedItem == 'menu'" (click)="changeRoute('menu')">Customize Menu</li>
+    <li class="pointer" [class.active] = "selectedItem == 'settings'" (click)="changeRoute('settings')">Settings</li>
+  </ul>
+</div>

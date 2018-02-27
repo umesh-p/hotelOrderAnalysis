@@ -1,0 +1,23 @@
+
+.logoDiv{
+  background: url('../../../assets/images/flemingoIcon.jpg');
+  background-size: 100% 100%;
+  margin-bottom: 20px;
+  height: 75px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.MenuList{
+  margin-top: 30px;
+
+}
+
+.MenuList > li{
+  padding: 9px 10px;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.MenuList > li:hover , .active{
+  background-color: #303F9F;
+  color:white;
+}

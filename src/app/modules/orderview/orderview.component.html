@@ -1,0 +1,63 @@
+<div class="row">
+
+  <div class="orderHeader col-md-10 col-sm-10 offset-md-1 offset-sm-1">
+    Table number - 1
+  </div>
+  <div class="orderContainer col-md-10 col-sm-10 offset-md-1 offset-sm-1 padding0" >
+
+    <table class="table table-striped table-bordered">
+      <thead>
+          <tr>
+              <th>Item Name</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Action</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let newOrderItem of orderArray; let i = index">
+              <td>
+                  <input [(ngModel)]="newOrderItem.code" class="form-control" type="text" name="{{newOrderItem.code}}" />
+              </td>
+              <td>
+                  <input [(ngModel)]="newOrderItem.quantity" class="form-control" type="number" name="{{newOrderItem.quantity}}" (change)="onQuantityItemUpdate(newOrderItem.code,i)"/>
+              </td>
+              <td>
+                  <span class="priceSpan">{{newOrderItem.price}}</span>
+              </td>
+              <td>
+                  <button class="btn btn-default"  type="button" (click)="deletemenuItemValue(i)">Delete</button>
+              </td>
+          </tr>
+          <tr>
+              <td>
+
+                <select class="form-control" [(ngModel)]="selectedItem" (change)="getSelectedItem()">
+                 <option *ngFor="let item of availableItems" [ngValue]="item">
+                    {{ item.code }}
+                 </option>
+                </select>
+
+              </td>
+              <td>
+                  <input class="form-control" type="number" [(ngModel)]="newOrderItem.quantity" (change) = "onQuantityChange()" name="newOrderItemQty" />
+              </td>
+              <td>
+                  <span class="priceSpan">{{newOrderItem.price}}</span>
+              </td>
+              <td>
+                  <button class="btn btn-default" type="button" (click)="addmenuItemValue()">Add</button>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+
+  </div>
+  <div class="orderFooter col-md-10 col-sm-10 offset-md-1 offset-sm-1 ">
+    Total Bill :{{totalAmount}} Rs.
+    <button class="btn btn-default float-right submitBtn" type="button" (click)="onOrderSubmit()">Submit Order</button>
+
+
+  </div>
+
+</div>

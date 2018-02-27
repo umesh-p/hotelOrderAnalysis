@@ -1,0 +1,44 @@
+.titleDiv{
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    background: white;
+}
+.zindex1{
+    position: relative;
+    z-index: 1;
+}
+.leftMenu{
+    position: relative;
+    z-index: 2;
+}
+.menuManipulateDiv{
+    height: calc(100vh - 160px);
+    overflow-y: auto;
+    background-color: white;
+    width: 95%;
+    margin-left: 2%;
+    margin-top: 20px;
+}
+.addMenuItem{
+  margin-top:10px;
+  margin-bottom: 10px;
+}
+.menuItemHeader, .menuItemAddSection{
+    padding: 10px 25px 10px 15px;
+    background: #f3f3f3;
+    font-size: 18px;
+}
+.menuItemAddSection{
+  margin-top: 10px;
+}
+.largeFont{
+  font-size: 28px;
+  margin-left: 20px;
+}
+.saveButton{
+    background-color: #3f50b5 !important;
+    color: white !important;
+    font-size: 14px !important;
+}

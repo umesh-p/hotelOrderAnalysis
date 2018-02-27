@@ -1,0 +1,112 @@
+.backImage{
+  background: #141e30; /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #141e30, #243b55); /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #141e30, #243b55); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+       font-family:Arial;
+  font-size:14px;
+  font-family: "Times New Roman", Times, serif;
+}
+h2{
+  color:white;
+  margin-top: -10%;
+}
+.loginContainer{
+  background: transparent;
+}
+.flemingoLogo
+{
+    height: 95px;
+    background: url('../../../assets/images/flemingoIcon.jpg');
+    background-size: cover;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+/* Based on a Dribbble shot by Andreas Storm
+   http://dribbble.com/shots/1127916-Sign-in
+*/
+
+*{
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+input[type="text"],
+input[type="password"]{
+  background:#EAE6E1;
+  border:0;
+  font-size: 16px;
+  padding:10px;
+  border-radius:3px;
+  width:100%;
+  margin:5px 0;
+  outline:medium none;
+  color:#838383;
+}
+input[type="password"]{
+  margin-bottom: 30px;
+}
+input[type="submit"]{
+  display:block;
+  padding:10px;
+  background:#172236;
+  border:0;
+  border-radius:3px;
+  width:100%;
+  color:#fff;
+  cursor:pointer;
+  -webkit-transition:all 0.3s;
+  -moz-transition:all 0.3s;
+  transition:all 0.3s;
+}
+input[type="submit"]:hover{
+  background:#172236;
+}
+input[type="submit"]::focus {outline:0;}
+
+.main-form{
+  width:360px;
+  margin: 100px auto;
+  padding:45px;
+  border: 1px solid rgba(0,0,0,0.1);
+  -webkit-box-shadow:0 1px 2px rgba(0,0,0,0.2);
+  background:#fff;
+}
+
+.main-form > label{
+  display:block;
+  margin:10px 0 15px;
+  line-height:15px;
+  cursor:pointer;
+}
+
+a{
+  color:#1d1100;
+  text-decoration:none;
+}
+.main-form > a{
+  font-size:13px;
+  display:block;
+  text-align:center;
+  margin:10px 0;
+}
+.main-form > div >a:first-child{
+
+}
+.main-form > div >a:nth-child(2){
+  border:1px solid #141e31;
+  display:inline-block;
+  border-radius:3px;
+  color:#141e31;
+
+  font-size: 13px;
+  padding:7px 15px;
+  margin-left:28px;
+  -webkit-transition:all 0.3s;
+  -moz-transition:all 0.3s;
+  transition:all 0.3s;
+}
+.main-form > div >a:nth-child(2):hover{
+  background:#141e31;
+  color:#fff;
+}

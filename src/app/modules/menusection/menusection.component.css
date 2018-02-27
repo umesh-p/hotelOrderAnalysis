@@ -1,0 +1,13 @@
+.menuSection{
+  margin: 0px;
+}
+.menuSectionHead{
+    padding: 8px 12px;;
+    background: #3F51B5;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+}
+.table-bordered td, .table-bordered th{
+    padding: 0.5rem .75rem !important;
+}

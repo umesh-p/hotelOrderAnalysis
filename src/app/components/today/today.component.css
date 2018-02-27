@@ -1,0 +1,91 @@
+.titleDiv{
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    background: white;
+}
+.zindex1{
+    position: relative;
+    z-index: 1;
+}
+.leftMenu{
+    position: relative;
+    z-index: 2;
+}
+.main {
+    overflow-y: scroll;
+    padding-bottom: 30px;
+    background-color: #f7f7f7;
+    position: unset;
+    padding-top: 20px;
+
+}
+.mainChild{
+    width: 97%;
+    margin-left: 3%;
+    margin-bottom: 35px;
+    margin-top: 5px;
+}
+.mainChild2 , .mainChild3{
+    width: 95%;
+    margin-left: 2%;
+    margin-bottom: 20px;
+}
+
+.cardContainer{
+    height: auto;
+    background: white;
+}
+
+.cardContainer2{
+    height: auto;
+    background: white;
+}
+
+.ibox-title {
+  padding: 20px 15px 15px 15px;
+  font-size: 18px;
+  border-bottom: 1px solid #cacaca;
+}
+
+.ibox-content {
+    background-color: #ffffff;
+    color: inherit;
+    padding: 15px 20px 20px 20px;
+    text-align: center;
+}
+.no-margins {
+    margin: 0 !important;
+}
+.text-success {
+    color: #1c84c6;
+}
+.font-bold {
+    font-weight: 600;
+}
+
+.small, small {
+    font-size: 100%;
+    display: inline-block;
+    margin-top: 7px;
+    font-weight: 500;
+}
+h4, .h4 {
+    font-size: 16px;
+    font-weight: bold;
+}
+h1, .h1 {
+    font-size: 45px;
+}
+.label{
+    margin-top: 8px !important;
+    color: white !important;
+}
+.c3-chart-arc text {
+    fill: red;
+    font-size: 13px !important;
+}
+.c3-line {
+  stroke-width: 3px;
+}

@@ -1,0 +1,64 @@
+.titleDiv{
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    background: white;
+}
+.zindex1{
+    position: relative;
+    z-index: 1;
+}
+.leftMenu{
+    position: relative;
+    z-index: 2;
+}
+.overflow{
+  overflow-y: auto;
+}
+.ordersContainer{
+  height: calc(100vh - 140px);
+}
+.tablesList{
+  margin-top: 10px;
+}
+.tablesList > li{
+    padding: 10px 15px;
+    background: #fffcdff2;
+    margin-top: 5px;
+    border: 1px solid #9a9a9a78;
+}
+
+.tablesList > li:hover{
+  background: #FFD54F;
+}
+
+.redbackground{
+  background:#F4511E;
+}
+
+.menuSectionHeader{
+    text-transform: uppercase;
+    padding: 10px 20px;
+    background-color: #313f9f;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+.menuSection {
+    padding-left: 0px;
+}
+.menuList{
+    padding-left: 0px;
+}
+.menuListItem{
+    padding: 10px 30px;
+    text-transform: capitalize;
+    border: 1px solid #c3c3c3;
+    background-color: whitesmoke;
+    font-size: 16px;
+}
+
+.orderContainer{
+
+}

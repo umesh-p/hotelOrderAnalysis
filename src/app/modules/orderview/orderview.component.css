@@ -1,0 +1,31 @@
+.orderHeader{
+  height: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  background: #283593;
+  line-height: 50px;
+}
+.orderFooter{
+  height: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  background: #283593;
+  line-height: 50px;
+  padding-right:30px;
+}
+.table{
+  margin-bottom: 0;
+}
+select {
+     margin-left: 0px;
+     outline: none;
+}
+.priceSpan{
+    font-size: 24px;
+}
+.submitBtn{
+    padding: 2px 15px;
+    margin-top: 10px;
+}

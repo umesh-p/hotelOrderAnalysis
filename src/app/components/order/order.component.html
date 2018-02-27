@@ -1,0 +1,45 @@
+<div class="row fullHeight">
+
+  <div class="col-lg-2 col-md-3 card-right-box-shadow leftMenu">
+    <app-drawer></app-drawer>
+  </div>
+  <div class="col-lg-10 col-md-9 padding0">
+    <div class="col-md-12 card-light-box-shadow zindex1">
+      <app-header></app-header>
+    </div>
+    <div class="col-md-12 titleDiv blackColor card-light-box-shadow">
+      Order: <strong>Take Orders</strong>
+    </div>
+    <div class="row margin-top15" *ngIf="numberOfTables == 0">
+      <div class="col-md-4 col-sm-4 offset-md-4 offset-sm-4">
+        <input [(ngModel)]="totalTables" class="form-control" type="number" name="NumberOfTables" placeholder="Enter The number of Tables" (keyup.enter)="addTables(totalTables)"/>
+      </div>
+    </div>
+    <div class="row ordersContainer " *ngIf="numberOfTables != 0">
+      <div class="col-md-2 col-sm-2 style-4 overflow">
+        <div class="orderTables ">
+            <ul class="tablesList">
+              <li *ngFor="let order of ordersList"  class="pointer" [class.redbackground]="!order.menuOrder" (click)="onTableClicked(order)">{{order.table}}</li>
+            </ul>
+        </div>
+      </div>
+      <div class="col-md-7 col-sm-7">
+        <div class="orderContainer fullHeight">
+
+            <app-orderview [menu]="menu" (orderArray)="currentOrder"></app-orderview>
+
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-3 overflow">
+        <div class="row">
+        <div class="menuSection col-md-12 col-sm-12" *ngFor="let menuSection of menu">
+          <div class="menuSectionHeader"> {{menuSection.name}}  </div>
+            <ul class="menuList">
+              <li class="menuListItem" *ngFor="let item of menuSection.items">{{item.code}}</li>
+            </ul>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
